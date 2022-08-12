@@ -1,0 +1,44 @@
+﻿<Window x:Class="WPF_Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="350">
+    <Grid>
+        <StackPanel>
+        <StackPanel Orientation="Horizontal" Height="30" VerticalAlignment="Top">
+            <Label FontSize="15">Họ Tên :</Label>
+            <TextBox Width="250"></TextBox>
+        </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Width="150" HorizontalAlignment="Left">
+                    <Label>Danh sách</Label>
+                    <ListView x:Name="lv1">
+                        <ListViewItem Name="lv1" Content="Công nghệ thực tại ảo"/>
+                        <ListViewItem Name="lv2">Công nghệ thực tại ảo</ListViewItem>
+                        <ListViewItem Selected="ListViewItem_Selected">Công nghệ thực tại ảo</ListViewItem>
+                        <ListViewItem>Công nghệ thực tại ảo</ListViewItem>
+                        <ListViewItem>Công nghệ thực tại ảo</ListViewItem>
+                        <ListViewItem>Công nghệ thực tại ảo</ListViewItem>
+                        <ListViewItem>Công nghệ thực tại ảo</ListViewItem>
+                    </ListView>
+                </StackPanel>
+                <StackPanel Height="45" >
+                    <Button Click="Button_Click">></Button>
+                    <Button>>></Button>
+                </StackPanel>
+                <StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <Label>Sách đã chọn</Label>
+                        <ListView Name="lvCheck">
+                            
+                        </ListView>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>

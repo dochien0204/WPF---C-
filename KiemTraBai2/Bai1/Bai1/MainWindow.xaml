@@ -1,0 +1,30 @@
+﻿<Window x:Class="Bai1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bai1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="804">
+    <Grid Margin="0,0,46,0">
+        <Label Content="Họ tên nhân viên" Name="hoTen" HorizontalAlignment="Left" Margin="62,36,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.197,0.345" FontFamily="Times New Roman" FontSize="20"/>
+        <Label Content="Loại nhân viên" Name="type" HorizontalAlignment="Left" Margin="62,103,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.197,0.345" FontFamily="Times New Roman" FontSize="20"/>
+        <Label Content="Ngày sinh" Name="date_nv" HorizontalAlignment="Left" Margin="62,172,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.197,0.345" FontFamily="Times New Roman" FontSize="20"/>
+        <Label Content="Số tiền bán hàng" Name="money" HorizontalAlignment="Left" Margin="62,238,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.197,0.345" FontFamily="Times New Roman" FontSize="20"/>
+        <TextBox Name="name" HorizontalAlignment="Center" Height="33" Margin="0,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282"/>
+        <ComboBox Name="cbType" SelectedIndex="-1" HorizontalAlignment="Center" Height="33" Margin="0,104,0,0" VerticalAlignment="Top" Width="282" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="Cơ Hữu"></ComboBoxItem>
+            <ComboBoxItem Content="Cơ Hữu"></ComboBoxItem>
+            <ComboBoxItem Content="Cơ Hữu"></ComboBoxItem>
+        </ComboBox>
+        <DatePicker Name="dp" HorizontalAlignment="Center" Height="31" Margin="0,174,0,0" VerticalAlignment="Top" Width="282"/>
+        <TextBox Name="tbMoney" HorizontalAlignment="Center" Height="33" Margin="0,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" />
+        <ListBox SelectionMode="Multiple" Name="lbInfo" HorizontalAlignment="Left" Height="93" Margin="62,311,0,0" VerticalAlignment="Top" Width="467"/>
+        <Button HorizontalAlignment="Left" Content="Nhập" Height="28" Margin="62,434,0,0" VerticalAlignment="Top" Width="114" Click="Button_Click">
+
+        </Button>
+        <Button HorizontalAlignment="Left" Content="Xóa" Height="28" Margin="238,434,0,0" VerticalAlignment="Top" Width="114" Click="Button_Click_2"/>
+        <Button HorizontalAlignment="Left" Content="Windows2" Height="28" Margin="415,434,0,0" VerticalAlignment="Top" Width="114" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
