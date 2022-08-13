@@ -14,8 +14,8 @@
         <TextBox Name="name" HorizontalAlignment="Center" Height="33" Margin="0,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282"/>
         <ComboBox Name="cbType" SelectedIndex="-1" HorizontalAlignment="Center" Height="33" Margin="0,104,0,0" VerticalAlignment="Top" Width="282" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem Content="Cơ Hữu"></ComboBoxItem>
-            <ComboBoxItem Content="Cơ Hữu"></ComboBoxItem>
-            <ComboBoxItem Content="Cơ Hữu"></ComboBoxItem>
+            <ComboBoxItem Content="Hữu Cơ"></ComboBoxItem>
+            <ComboBoxItem Content="Cơ Cơ"></ComboBoxItem>
         </ComboBox>
         <DatePicker Name="dp" HorizontalAlignment="Center" Height="31" Margin="0,174,0,0" VerticalAlignment="Top" Width="282"/>
         <TextBox Name="tbMoney" HorizontalAlignment="Center" Height="33" Margin="0,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" />
