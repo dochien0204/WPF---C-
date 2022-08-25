@@ -137,6 +137,7 @@ namespace Bai3
                         join khoa in db.Khoas
                         on bn.MaKhoa equals khoa.MaKhoa
                         where bn.MaKhoa == 1
+                        orderby bn.VienPhi
                         select new
                         {
                             bn.MaBn,
@@ -144,7 +145,7 @@ namespace Bai3
                             bn.MaKhoa,
                             bn.DiaChi,
                             bn.SoNgayNamVien,
-                            VienPhi = bn.SoNgayNamVien * 200000
+                            VienPhi = bn.vienPhi()
                         };
             dg_listBN.ItemsSource = query.ToList();
 
