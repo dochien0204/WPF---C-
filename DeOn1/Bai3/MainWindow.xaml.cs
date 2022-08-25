@@ -1,6 +1,7 @@
 ﻿using Bai3.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -39,7 +40,7 @@ namespace Bai3
                             bn.MaKhoa,
                             bn.DiaChi,
                             bn.SoNgayNamVien,
-                            VienPhi =string.Format("{0:0.###}",bn.SoNgayNamVien * 200000)
+                            VienPhi = bn.vienPhi()
                         };
             dg_listBN.ItemsSource = query.ToList();
 
@@ -143,9 +144,21 @@ namespace Bai3
                             bn.MaKhoa,
                             bn.DiaChi,
                             bn.SoNgayNamVien,
-                            VienPhi = string.Format("{0:0.###}", bn.SoNgayNamVien * 200000)
+                            VienPhi = bn.SoNgayNamVien * 200000
                         };
             dg_listBN.ItemsSource = query.ToList();
+
+
         }
+
+
+        public string convert(int? vienPhi)
+        {
+
+            CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");   // try with "en-US"
+            string a = double.Parse("12345").ToString("#,###", cul.NumberFormat);
+            return a;
+        }
+
     }
 }

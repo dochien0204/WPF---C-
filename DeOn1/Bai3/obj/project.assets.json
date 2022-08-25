@@ -2017,11 +2017,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mon Hoc Tren Truong\\Ky Phu Ky 4\\C#\\OnThi\\Bai3\\Bai3\\Bai3.csproj",
+      "projectUniqueName": "C:\\Mon Hoc Tren Truong\\Ky Phu Ky 4\\C#\\WPF\\DeOn1\\Bai3\\Bai3.csproj",
       "projectName": "Bai3",
-      "projectPath": "C:\\Mon Hoc Tren Truong\\Ky Phu Ky 4\\C#\\OnThi\\Bai3\\Bai3\\Bai3.csproj",
+      "projectPath": "C:\\Mon Hoc Tren Truong\\Ky Phu Ky 4\\C#\\WPF\\DeOn1\\Bai3\\Bai3.csproj",
       "packagesPath": "C:\\Users\\Do Chien\\.nuget\\packages\\",
-      "outputPath": "C:\\Mon Hoc Tren Truong\\Ky Phu Ky 4\\C#\\OnThi\\Bai3\\Bai3\\obj\\",
+      "outputPath": "C:\\Mon Hoc Tren Truong\\Ky Phu Ky 4\\C#\\WPF\\DeOn1\\Bai3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Do Chien\\AppData\\Roaming\\NuGet\\NuGet.Config",

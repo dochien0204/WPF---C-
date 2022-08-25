@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace Bai3.Models
 {
@@ -13,5 +14,13 @@ namespace Bai3.Models
         public int? MaKhoa { get; set; }
 
         public virtual Khoa? MaKhoaNavigation { get; set; }
+
+        public string vienPhi()
+        {
+            CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
+            int a = (int)SoNgayNamVien * 200000;
+            string b = int.Parse(a.ToString()).ToString("#,###", cul.NumberFormat);
+            return b;
+        }
     }
 }

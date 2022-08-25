@@ -94,7 +94,7 @@
                     </DataGridTextColumn.HeaderStyle>
                 </DataGridTextColumn>
 
-                <DataGridTextColumn Width="100" Header="Họ tên" Binding="{Binding HoTen}">
+                <DataGridTextColumn Width="120" Header="Họ tên" Binding="{Binding HoTen}">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="HorizontalAlignment" Value="Center"/>

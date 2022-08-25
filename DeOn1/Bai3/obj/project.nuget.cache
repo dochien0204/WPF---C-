@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iI+bR0JYHQzJXwJ/xpiP1dVe13chfqnJG2Ha8U6v0lrVPxAn7yxFvK1e68Htq7gDq6q4/1mnDsfLiEnoQUWjfw==",
+  "dgSpecHash": "I/IVydRTUbH1XAQeVXMIr2yqeRV5XSEHB1yP8LCK/u4L4JFbs6u6JkRRp//ZOGlYkbz5fW2Y4n/AKSpOTSbG4A==",
   "success": true,
-  "projectFilePath": "C:\\Mon Hoc Tren Truong\\Ky Phu Ky 4\\C#\\OnThi\\Bai3\\Bai3\\Bai3.csproj",
+  "projectFilePath": "C:\\Mon Hoc Tren Truong\\Ky Phu Ky 4\\C#\\WPF\\DeOn1\\Bai3\\Bai3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Do Chien\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Do Chien\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
