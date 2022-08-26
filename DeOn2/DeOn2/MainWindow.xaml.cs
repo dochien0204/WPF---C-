@@ -158,8 +158,22 @@ namespace DeOn2
 
         private void BtnTim_Click(object sender, RoutedEventArgs e)
         {
-            Window2 window = new Window2();
-            window.Show();
+            Window2 window2 = new Window2();
+            var query = from sp in db.SanPhams
+                        join nh in db.NhomHangs
+                        on sp.MaNhomHang equals nh.MaNhomHang
+                        where nh.TenNhomHang == cbHang.Text
+                        select new
+                        {
+                            sp.MaSp,
+                            sp.TenSanPham,
+                            sp.DonGia,
+                            sp.SoLuongBan,
+                            nh.TenNhomHang,
+                            TienBan = sp.tienBan()
+                        };
+            window2.dg_list.ItemsSource = query.ToList();
+            window2.Show();
 
         }
     }

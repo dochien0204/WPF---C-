@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="800" Loaded="Window2_Loaded">
     <Grid>
-        <DataGrid Name="dg_listSp" AutoGenerateColumns="False" HorizontalAlignment="Center" Height="165" VerticalAlignment="Top" Width="800" d:ItemsSource="{d:SampleData ItemCount=5}" FontFamily="Times New Roman" FontSize="20">
+        <DataGrid Name="dg_list" AutoGenerateColumns="False" HorizontalAlignment="Center" Height="165" VerticalAlignment="Top" Width="640" d:ItemsSource="{d:SampleData ItemCount=5}" FontFamily="Times New Roman" FontSize="20" Margin="0,27,0,0">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Mã sản phẩm" Binding="{Binding MaSp}">
                     <DataGridTextColumn.HeaderStyle>

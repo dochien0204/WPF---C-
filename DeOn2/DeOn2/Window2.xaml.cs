@@ -28,21 +28,8 @@ namespace DeOn2
 
         private void Window2_Loaded(object sender, RoutedEventArgs e)
         {
-            var query = from sp in db.SanPhams
-                        join nh in db.NhomHangs
-                        on sp.MaNhomHang equals nh.MaNhomHang
-                        where sp.MaNhomHang == 1
-                        orderby sp.DonGia * sp.SoLuongBan
-                        select new
-                        {
-                            sp.MaSp,
-                            sp.TenSanPham,
-                            sp.DonGia,
-                            sp.SoLuongBan,
-                            nh.TenNhomHang,
-                            TienBan = sp.tienBan()
-                        };
-            dg_listSp.ItemsSource = query.ToList();
+ 
+            
         }
     }
 }
