@@ -154,7 +154,7 @@ namespace DeOn4
             }   
             else
             {
-                MessageBox.Show("Chưa có sản phẩm nào được chọn để sửa");
+                MessageBox.Show("Không tìm thấy hàng cần sửa");
             }
         }
 

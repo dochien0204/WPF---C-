@@ -41,6 +41,7 @@ namespace DeOn4
                             tong = hang.DonGiaBan * hang.SoLuongCon
                         };
             var query = hangs.GroupBy(h => new { h.MaDm, h.TenDm })
+                .Where(dm => dm.Sum(dm => dm.tong) >= 6000000)
                 .Select(dm => new
                 {
                     dm.Key.MaDm,
