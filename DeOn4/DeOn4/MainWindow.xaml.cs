@@ -111,6 +111,7 @@ namespace DeOn4
                     db.Hangs.Add(hang);
                     db.SaveChanges();
                     MessageBox.Show("Thêm thành công", "Thông báo");
+                    clearTextBox();
                     hienThi();  
                 }
             }
@@ -148,6 +149,7 @@ namespace DeOn4
                 hangSua.MaDm = dm.MaDm;
                 db.SaveChanges();
                 MessageBox.Show("Sửa thành công", "Thông báo");
+                clearTextBox();
                 hienThi();
             }   
             else
@@ -166,6 +168,8 @@ namespace DeOn4
                 {
                     db.Hangs.Remove(hangXoa);
                     db.SaveChanges();
+                    MessageBox.Show("Xóa thành công");
+                    clearTextBox();
                     hienThi();
                 }
             }
@@ -179,6 +183,16 @@ namespace DeOn4
         {
             WindowSearch window = new WindowSearch();
             window.Show();
+        }
+
+        private void clearTextBox()
+        {
+            tbMaHang.Clear();
+            tbTenHang.Clear();
+            tbDonGia.Clear();
+            tbSoLuong.Clear();
+            cbDanhMuc.SelectedIndex = 0;
+            tbMaHang.Focus();
         }
     }
 }
